@@ -1,0 +1,22 @@
+ [
+      {
+        
+        "image": "https://i.postimg.cc/v8gQ5Nkk/beach.jpg",
+        "tourType": "Beach"
+      },
+      {
+       
+        "image": "https://i.postimg.cc/ZnyD03fs/historical.jpg",
+        "tourType": "Historical"
+      },
+      {
+        
+        "image": "https://i.postimg.cc/V5QZt6pf/mountin.jpg",
+        "tourType": "Mountain"
+      },
+      {
+       
+        "image": "https://i.postimg.cc/MTLFWtYj/view.jpg",
+        "tourType": "View Point "
+      }
+    ]
