@@ -11,11 +11,15 @@ const Navbar = () => {
   console.log(user)
   const handleLogOut = () =>{
      logOut()
-     .then(Swal({
-      title: "Log Out ",
-      icon: "success",
-      button:"ok"
-    }))
+     .then(
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Log out",
+        showConfirmButton: false,
+        timer: 1500
+      })
+     )
   .catch()
   }
   return (
@@ -41,7 +45,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#64A893] rounded-box w-52 text-xl"
+              className="menu menu-sm dropdown-content mt-3 z-[10]  p-2 shadow bg-white text-black rounded-box w-52 text-xl"
             >
               <li>
                 <Link to={"/"}>Home</Link>
@@ -68,7 +72,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
           <img src="https://i.postimg.cc/qvgWBtWP/Travelite-removebg-preview-1.png" alt="" />
-          <h2 className="text-4xl w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-[#2EC1DB] to-sky-500/30">Trips.</h2>
+          <h2 className="text-4xl w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-[#2EC1DB] to-sky-500/30">Trips Fables.</h2>
          
           
           </div>
@@ -100,15 +104,15 @@ const Navbar = () => {
 
         </div>
         <div className="navbar-end">
-          <div className="dropdown dropdown-end">
+          <div className="dropdown dropdown-end ">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src="" alt="" />
+                <img src={user?.photoURL} alt="" />
               </div>
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[10] p-4 shadow  rounded-box w-52 bg-white text-black"
             >
              
             
@@ -119,7 +123,7 @@ const Navbar = () => {
               user? <li>Gmail: {user.email}</li>:<></>
             }
 
-              <li className="bg-[#2EC1DB]">
+              <li className="bg-[#2EC1DB] text-black">
                 {
                   user ? <Link to={"/dashboard"}>Dashboard</Link>:<></>
                 }

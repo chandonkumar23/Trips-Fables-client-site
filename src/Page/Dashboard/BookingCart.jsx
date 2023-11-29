@@ -47,7 +47,7 @@ const BookingCart = ({book}) => {
         <p>pending</p>
         </th>
         <th>
-        <button className="bg-[#2EC1DB] px-2 p-1">Pay</button>
+        <button className="bg-[#2EC1DB] px-2 p-1 text-black">Pay</button>
         </th>
       </tr>
       

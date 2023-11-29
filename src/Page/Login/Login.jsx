@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Authprovider/Authprovider";
 import GoogleLoing from "../GoogleLogin/GoogleLogin";
+import Swal from "sweetalert2";
 
 const Login = () => {
 
@@ -21,6 +22,15 @@ const Login = () => {
   .then(result =>{
     const user = result.user;
     console.log(user);
+    if(signIn){
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Login",
+        showConfirmButton: false,
+        timer: 1500
+      });
+    }
     navigate(from,{replace:true});
   })
     };
@@ -59,7 +69,7 @@ const Login = () => {
                 />
               </div>
               <div className="form-control mt-6">
-                <button className="p-2 border-2 bg-[#2EC1DB] shadow-2xl">
+                <button className="p-2 border-2 bg-[#2EC1DB] text-black shadow-2xl">
                   Login
                 </button>
               </div>

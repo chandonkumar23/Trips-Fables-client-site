@@ -37,8 +37,8 @@ axiosSecure.patch(`/users/admin/${user._id}`)
 
     return (
         <div>
-            
-            <p>{users.length}</p>
+               <h2 className="text-4xl w-full text-transparent bg-clip-text font-extrabold bg-gradient-to-r from-[#2EC1DB] to-sky-500/30">Manage Users.</h2>
+            <p> Total Users: {users.length}</p>
 
             <div className="overflow-x-auto">
         <table className="table">

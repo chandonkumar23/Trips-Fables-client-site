@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Authprovider/Authprovider";
 
 import Swal from "sweetalert2";
@@ -11,6 +11,8 @@ import UserAxioxPublic from "../Hooks/UserAxioxPublic";
 
 const Signup = () => {
 const {createUser,updateUserProfile} = useContext(AuthContext);
+const navigate = useNavigate();
+const from = location.state?.from?.pathname || "/";
 const [signError,setSignError] = useState('');
 const axiosPublic = UserAxioxPublic();
     const handleSignup = (event) =>{
@@ -51,6 +53,7 @@ const axiosPublic = UserAxioxPublic();
           axiosPublic.post('/users',userInfo).then((res)=>{
              
           })
+          navigate(from,{replace:true});
 
           }
         })
@@ -116,7 +119,7 @@ const axiosPublic = UserAxioxPublic();
                   />
                 </div>
                 <div className="form-control mt-6">
-                  <button className="p-2 border-2 bg-[#2EC1DB] shadow-2xl">
+                  <button className="p-2 border-2 bg-[#2EC1DB] text-black shadow-2xl">
                     Sign Up
                   </button>
                 </div>
@@ -124,7 +127,7 @@ const axiosPublic = UserAxioxPublic();
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Already have an account?{" "}
-                    <span className="text-[#205c67]">
+                    <span className="text-[#205c67] ">
                       <Link to={"/login"}>Login</Link>
                     </span>
                   </a>

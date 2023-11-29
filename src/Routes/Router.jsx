@@ -18,6 +18,8 @@ import MyWishlist from "../Page/Dashboard/MyWishlist";
 import AddPackage from "../Page/Dashboard/AddPackage";
 import ManageUser from "../Page/Dashboard/ManageUser";
 import MyAssigned from "../Page/Dashboard/MyAssigned";
+import PrivetRoutes from "./PrivetRoutes/PrivetRoutes";
+import Allpackage from "../Page/AllPackage/Allpackage";
 
 
 
@@ -68,39 +70,45 @@ import MyAssigned from "../Page/Dashboard/MyAssigned";
           loader: ()=> fetch('http://localhost:5000/all')
         },
         {
-          path:'dashboard',
-          element:<Dashboard></Dashboard>,
-          
-        },
-        {
-          path:'myprofile',
-          element:<MyProfile></MyProfile>
-        },
-        {
-          path:'booking',
-          element:<MyBooking></MyBooking>
-        },
-        {
-          path:'wishlist',
-          element:<MyWishlist></MyWishlist>
-        },
-        {
-          path:'addpackage',
-          element:<AddPackage></AddPackage>
-        },
-        {
-          path:'manageuser',
-          element:<ManageUser></ManageUser>
-        },
-        {
-          path:'myassigned',
-          element:<MyAssigned></MyAssigned>
+          path:'/allpacakge',
+          element:<Allpackage></Allpackage>
         }
-
+       
         
       ],
      
     },
+    {
+      path:'dashboard',
+        element:<PrivetRoutes><Dashboard></Dashboard></PrivetRoutes>,
+        children:[
+          {
+              path:'dashboard/myprofile',
+              element:<MyProfile></MyProfile>
+            },
+            {
+              path:'dashboard/booking',
+              element:<MyBooking></MyBooking>
+            },
+            {
+              path:'dashboard/wishlist',
+              element:<MyWishlist></MyWishlist>
+            },
+            {
+              path:'dashboard/addpackage',
+              element:<AddPackage></AddPackage>
+            },
+            {
+              path:'dashboard/manageuser',
+              element:<ManageUser></ManageUser>
+            },
+            {
+              path:'dashboard/myassigned',
+              element:<MyAssigned></MyAssigned>
+            }
+    
+        ]
+    }
    
    
   ]);

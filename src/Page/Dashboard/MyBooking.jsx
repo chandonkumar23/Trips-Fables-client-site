@@ -6,12 +6,12 @@ const MyBooking = () => {
 
     const {user} = useContext(AuthContext);
     const [booking, setBooking] = useState([]);
-    const BookingData = `http://localhost:5000/bookings?email?=${user.email}`
+    const BookingData = `http://localhost:5000/bookings/${user?.email}`
     useEffect(()=>{
       fetch(BookingData)
       .then(res =>res.json())
       .then(data =>setBooking(data))
-    },[])
+    },[BookingData])
     return (
         <div>
            {

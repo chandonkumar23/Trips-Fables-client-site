@@ -5,10 +5,11 @@ import { FaRegHeart } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Authprovider/Authprovider";
+
 const TourDetailesCart = ({data}) => {
   const {user}= useContext(AuthContext)
-  const email =user.email;
-    const {_id, image, price, tripTitle,tourType }=data;
+  const email =user?.email;
+    const {_id, image, price, tripTitle,tourType }=data ||{};
     const alldata= {image,price,tripTitle,tourType,email};
     const handleAdd = () =>{
       fetch('http://localhost:5000/whishlist',{
@@ -31,6 +32,7 @@ const TourDetailesCart = ({data}) => {
             timer: 1500
           });
         }
+        
       })
       
     }
@@ -49,7 +51,7 @@ const TourDetailesCart = ({data}) => {
           <p>{tourType}</p>
           <p><span className="font-bold">price:</span> {price}.TK</p>
           <div className="card-actions justify-end">
-            <button className="p-2 border-2 bg-[#2EC1DB] shadow-2xl"><Link to={`/detailes/${_id}`}>View Packag</Link></button>
+            <button className="p-2 border-2 bg-[#2EC1DB] shadow-2xl text-black"><Link to={`/detailes/${_id}`}>View Packag</Link></button>
           </div>
         </div>
         

@@ -7,7 +7,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const Banner = () => {
     return (
-        <div className='mb-10'>
+        <div className='mb-36'>
 <Swiper
         cssMode={true}
         navigation={true}

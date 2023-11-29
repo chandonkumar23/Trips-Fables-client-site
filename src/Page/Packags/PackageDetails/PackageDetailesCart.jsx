@@ -34,7 +34,7 @@ const PackageDetailesCart = ({packags}) => {
           className="collapse collapse-arrow border border-base-300 bg-base-200"
         >
           <div className="collapse-title text-xl font-medium">
-           <span className="bg-[#2EC1DB] p-2 rounded-md">Day 1:</span><span>{day1Title}</span>
+           <span className="bg-[#2EC1DB] p-2 rounded-md text-black">Day 1:</span><span>{day1Title}</span>
           </div>
           <div className="collapse-content">
             <p>{day1plan}</p>
@@ -45,14 +45,14 @@ const PackageDetailesCart = ({packags}) => {
           className="collapse collapse-arrow border border-base-300 bg-base-200"
         >
           <div className="collapse-title text-xl font-medium " >
-          <span className="bg-[#2EC1DB] p-2 rounded-md">Day 2:</span><span>{day2Title}</span>
+          <span className="bg-[#2EC1DB] p-2 rounded-md text-black ">Day 2:</span><span>{day2Title}</span>
           </div>
           <div className="collapse-content">
           <p>{day2plan}</p>
           </div>
         </div>
       </div>
-      <h1 className="text-center text-4xl font-bold"><span className="text-[#2EC1DB]">Booking</span> Now</h1>
+      <h1 className="text-center text-4xl font-bold"><span className="text-[#2EC1DB] ">Booking</span> Now</h1>
       <div className="flex justify-center w-full mx-auto">
       
             <div>

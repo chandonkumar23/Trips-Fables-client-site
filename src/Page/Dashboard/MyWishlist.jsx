@@ -5,12 +5,12 @@ import MywishCart from "./MywishCart";
 const MyWishlist = () => {
     const {user} = useContext(AuthContext);
     const [booking, setBooking] = useState([]);
-    const BookingData = `http://localhost:5000/whishlist?email?=${user.email}`
+    const BookingData = `http://localhost:5000/whishlist/${user?.email}`
     useEffect(()=>{
       fetch(BookingData)
       .then(res =>res.json())
       .then(data =>setBooking(data))
-    },[])
+    },[BookingData])
     return (
         <div className="grid lg:grid-cols-3">
           {

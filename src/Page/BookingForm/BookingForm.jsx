@@ -24,7 +24,7 @@ const BookingForm = ({packags}) => {
 
 
   const handleBookin = event =>{
-    if(user && user.email){
+    if(user && user?.email){
 
       event.preventDefault();
     const form = event.target;
@@ -43,15 +43,13 @@ const BookingForm = ({packags}) => {
         Swal.fire({
           position: "top-end",
           icon: "success",
-          title: "Your work has been saved",
+          title: "Package Booked",
           showConfirmButton: false,
           timer: 1500
         });
       }
     })
-       
     }
-
    else{
     Swal.fire({
       title: "You are not Logged in",
@@ -112,7 +110,7 @@ const BookingForm = ({packags}) => {
                 </label>
                 <input
                   type="text"
-                  placeholder="Enter Your Name"
+                  placeholder="Photo URL"
                   className="border-2 p-2"
                   required
                   name="image"
@@ -147,7 +145,7 @@ const BookingForm = ({packags}) => {
                 </label>
                 <input
                   type=""
-                  placeholder="Enter Your Name"
+                  placeholder="Guide"
                   className="border-2 p-2"
                   required
                   name="guide"
@@ -156,7 +154,7 @@ const BookingForm = ({packags}) => {
              </div>
             </div>
               <div className="form-control mt-6">
-                <button className="p-2 border-2 bg-[#2EC1DB] shadow-2xl">
+                <button className="p-2 border-2 bg-[#2EC1DB] text-black shadow-2xl">
                   Book Now
                 </button>
               </div>
