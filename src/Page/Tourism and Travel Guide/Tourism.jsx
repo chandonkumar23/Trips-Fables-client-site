@@ -21,14 +21,20 @@ const Tourism = () => {
         </TabList>
 
         <TabPanel>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/pruqppn5_yo?si=00pJUaCr1_ab6JwR"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-           
-          ></iframe>
+        <iframe  src="https://www.youtube.com/embed/5s8fs_j2xlY?si=IdENqbIe8MVixsbT" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+        <br />
+        <br />
+        <p> Welcome to [Trips Fables], where every journey is an adventure
+          waiting to unfold. We are more than just a tourist agency; we are your
+          gateway to immersive travel experiences that linger in your heart and
+          memories. Our Mission At [Trips Fables], our mission is to
+          transform your travel dreams into reality. We believe in curating not
+          just itineraries but stories — stories that resonate with the spirit
+          of exploration, discovery, and joy. What Sets Us Apart Passionate
+          Experts: Our team consists of passionate travel enthusiasts who are
+          dedicated to crafting unique and personalized experiences. From
+          off-the-beaten-path adventures to luxurious getaways, we cater to
+          diverse interests and preferences.</p>
         </TabPanel>
        
         <TabPanel>

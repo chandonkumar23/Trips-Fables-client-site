@@ -125,12 +125,12 @@ const axiosPublic = UserAxioxPublic();
                 </div>
   
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
+                  
                     Already have an account?{" "}
                     <span className="text-[#205c67] ">
                       <Link to={"/login"}>Login</Link>
                     </span>
-                  </a>
+                
                 </label>
                 {
             signError && <p className="text-red-500">{signError}</p>

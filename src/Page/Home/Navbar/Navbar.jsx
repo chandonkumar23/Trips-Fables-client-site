@@ -120,14 +120,34 @@ const Navbar = () => {
                     ? "text-[#2EC1DB] underline "
                     : ""}>Contact Us</NavLink>
               </li>
+             {
+              user? <>
+              </>
+              :<li>
+              <NavLink to={"/login"}className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-[#2EC1DB] underline "
+                  : ""}>Login</NavLink>
+            </li>
+             }
+            
+              
+             {
+              user? <></>
+              :
               <li>
-                <NavLink to={"/login"}className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "text-[#2EC1DB] underline "
-                    : ""}>Login</NavLink>
-              </li>
+              <NavLink to={"/signup"}className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-[#2EC1DB] underline "
+                  : ""}>Sign Up</NavLink>
+            </li>
+             }
+           
+             
               
              
              

@@ -1,8 +1,9 @@
+import AllStory from "../TouristStory/AllStory";
 
 const Community = () => {
     return (
         <div>
-            Community
+            <AllStory></AllStory>
         </div>
     );
 };

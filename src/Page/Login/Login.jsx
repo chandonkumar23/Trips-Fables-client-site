@@ -74,12 +74,12 @@ const Login = () => {
               </div>
 
               <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
+                
                   New menber?{" "}
                   <span className="text-[#205c67]">
                     <Link to={"/signup"}>Sign up</Link>
                   </span>
-                </a>
+               
               </label>
          
             </form>

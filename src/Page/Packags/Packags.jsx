@@ -13,11 +13,13 @@ const Packags = () => {
 
   
   return (
-    <div className="grid lg:grid-cols-3">
+    <div>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3">
       {packags.slice(0, 3).map((packag) => (
         <PackageCart key={packag._id} packag={packag}></PackageCart>
       ))}
-      <button className="p-2 border-2 mb-3 bg-[#2EC1DB] shadow-2xl flex justify-center mx-auto text-center text-black">
+    </div>
+    <button className="p-2 border-2 mb-3 bg-[#2EC1DB] shadow-2xl flex justify-center mx-auto text-center text-black">
        <Link to={'/allpacakge'}>All Package</Link>
       </button>
     </div>
