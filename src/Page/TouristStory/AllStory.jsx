@@ -6,7 +6,7 @@ const AllStory = () => {
 
     const [storys, setStory] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/story")
+    fetch("https://asssignment-12-serverrr.vercel.app/story")
       .then((res) => res.json())
       .then((data) => setStory(data));
   }, []);

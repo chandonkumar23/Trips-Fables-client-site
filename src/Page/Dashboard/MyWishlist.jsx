@@ -5,7 +5,7 @@ import MywishCart from "./MywishCart";
 const MyWishlist = () => {
     const {user} = useContext(AuthContext);
     const [booking, setBooking] = useState([]);
-    const BookingData = `http://localhost:5000/whishlist/${user?.email}`
+    const BookingData = `https://asssignment-12-serverrr.vercel.app/whishlist/${user?.email}`
     useEffect(()=>{
       fetch(BookingData)
       .then(res =>res.json())

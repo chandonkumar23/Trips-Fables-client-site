@@ -63,13 +63,13 @@ import AllStory from "../Page/TouristStory/AllStory";
         {
          path:'/detailes/:_id',
          element:<PackageDetailes></PackageDetailes>,
-         loader: ()=> fetch('http://localhost:5000/all')
+         loader: ()=> fetch('https://asssignment-12-serverrr.vercel.app/all')
          
         },
         {
           path:'/tourDetails/:tourType',
           element:<TourDetailes></TourDetailes>,
-          loader: ()=> fetch('http://localhost:5000/all')
+          loader: ()=> fetch('https://asssignment-12-serverrr.vercel.app/all')
         },
         {
           path:'/allpacakge',
@@ -78,7 +78,7 @@ import AllStory from "../Page/TouristStory/AllStory";
         {
           path:'/story/:_id',
           element:<StoryDetailes></StoryDetailes>,
-          loader:() => fetch('http://localhost:5000/story')
+          loader:() => fetch('https://asssignment-12-serverrr.vercel.app/story')
         },
         {
           path:'allstory',

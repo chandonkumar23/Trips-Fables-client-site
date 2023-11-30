@@ -18,7 +18,7 @@ const MyProfile = () => {
     const allStory = { tourType, date,name,email,photo, Rate, story};
     console.log(allStory);
    
-    fetch("http://localhost:5000/story", {
+    fetch("https://asssignment-12-serverrr.vercel.app/story", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -5,7 +5,7 @@ const Allpackage = () => {
   const [packags, setPackag] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/all")
+    fetch("https://asssignment-12-serverrr.vercel.app/all")
       .then((res) => res.json())
       .then((data) => setPackag(data));
   }, []);

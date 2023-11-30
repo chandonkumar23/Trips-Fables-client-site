@@ -6,7 +6,7 @@ const MyBooking = () => {
 
     const {user} = useContext(AuthContext);
     const [booking, setBooking] = useState([]);
-    const BookingData = `http://localhost:5000/bookings/${user?.email}`
+    const BookingData = `https://asssignment-12-serverrr.vercel.app/bookings/${user?.email}`
     useEffect(()=>{
       fetch(BookingData)
       .then(res =>res.json())

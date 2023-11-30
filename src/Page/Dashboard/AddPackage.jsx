@@ -24,7 +24,7 @@ const AddPackage = () => {
         const addData = {
             image,tourType,tripTitle,price,galleryIM1,galleryIM2,galleryIM3,galleryIM4,day1Title,day1plan,day2Title,day2plan,About
         }
-        fetch ('http://localhost:5000/all',{
+        fetch ('https://asssignment-12-serverrr.vercel.app/all',{
             method:'POST',
             headers: {
                 'content-type': 'application/json'

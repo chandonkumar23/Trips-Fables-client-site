@@ -4,7 +4,7 @@ import TypeData from './typeData';
 const TourType = () => {
   const [types , setTypes] = useState([])
   useEffect(() =>{
-     fetch('http://localhost:5000/tourType')
+     fetch('https://asssignment-12-serverrr.vercel.app/tourType')
      .then (res => res.json())
      .then(data => setTypes(data))
      
