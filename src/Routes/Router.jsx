@@ -22,6 +22,7 @@ import PrivetRoutes from "./PrivetRoutes/PrivetRoutes";
 import Allpackage from "../Page/AllPackage/Allpackage";
 import StoryDetailes from "../Page/TouristStory/StoryDetailes";
 import AllStory from "../Page/TouristStory/AllStory";
+import ErrorPage from "../Page/ErrorPage";
 
 
 
@@ -30,6 +31,7 @@ import AllStory from "../Page/TouristStory/AllStory";
     {
       path: "/",
       element: <Main></Main>,
+      errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
             path:'/',

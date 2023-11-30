@@ -10,6 +10,7 @@ const Home = () => {
             <Tourism></Tourism>
             <TourType></TourType>
             <TouristStory></TouristStory>
+            
            
         </div>
     );
