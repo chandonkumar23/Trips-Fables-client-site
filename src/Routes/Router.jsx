@@ -20,6 +20,8 @@ import ManageUser from "../Page/Dashboard/ManageUser";
 import MyAssigned from "../Page/Dashboard/MyAssigned";
 import PrivetRoutes from "./PrivetRoutes/PrivetRoutes";
 import Allpackage from "../Page/AllPackage/Allpackage";
+import StoryDetailes from "../Page/TouristStory/StoryDetailes";
+import AllStory from "../Page/TouristStory/AllStory";
 
 
 
@@ -72,6 +74,15 @@ import Allpackage from "../Page/AllPackage/Allpackage";
         {
           path:'/allpacakge',
           element:<Allpackage></Allpackage>
+        },
+        {
+          path:'/story/:_id',
+          element:<StoryDetailes></StoryDetailes>,
+          loader:() => fetch('http://localhost:5000/story')
+        },
+        {
+          path:'allstory',
+          element: <AllStory></AllStory>
         }
        
         

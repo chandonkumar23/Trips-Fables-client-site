@@ -1,0 +1,39 @@
+ [
+      {
+        "tourType": "A tour of Cox's Bazar",
+        "date": "2023-12-15",
+        "name": "Chandon Explorers",
+        "email": "sunset@example.com",
+        "photo": "https://i.postimg.cc/SNTvTqD9/FB-IMG-1687531402988.jpg",
+        "rate": 4.8,
+        "story": "A tour of Cox's Bazar is a captivating journey filled with natural wonders and cultural richness. From the world's longest natural sea beach to the lush landscapes of Himchari National Park, travelers can explore pristine beauty, engage in water sports at Inani Beach, and witness the vibrant life at the fishing port. The journey also offers opportunities for cultural immersion, delicious seafood experiences, and breathtaking sunsets. Cox's Bazar is more than a destination; it's a tranquil escape where time seems to slow down, allowing visitors to appreciate the simple joys of life amid the stunning coastal scenery."
+      },
+      {
+        "tourType": "Story of Sajek vally tour",
+        "date": "2023-11-01",
+        "name": "Mountain Explorers",
+        "email": "mountain@example.com",
+        "photo": "https://i.postimg.cc/j5vSBLWK/story.jpg",
+        "rate": 4.5,
+        "story": "A tour of Sajek Valley offers a serene escape into the untouched beauty of the Chittagong Hill Tracts. With cozy accommodations nestled in the hills, visitors can explore tribal villages, experiencing the rich cultures of the Marma, Tripura, and Chakma communities. The panoramic landscapes, viewed from vantage points like Konglak Para, provide breathtaking scenes of lush green hills and mist-covered valleys. The journey blends cultural immersion with nature exploration, creating a tranquil and memorable experience in this picturesque valley."
+      },
+      {
+        "tourType": "Historical place Mahasthangar tour story",
+        "date": "2023-11-10",
+        "name": "Heritage Seekers",
+        "email": "heritage@example.com",
+        "photo": "https://i.postimg.cc/vTBZyb9n/story2.jpg",
+        "rate": 4.2,
+        "story": "A Mahasthangarh tour is a journey through time, immersing visitors in the rich historical tapestry of one of the earliest urban archaeological sites in Bangladesh. From exploring the ancient Citadel and city ruins to delving into the artifacts at the archaeological museum, each day is a step back into the 3rd century BCE. The tour includes visits to significant sites like Vasu Vihara and Gokul Medh, offering insights into the religious and cultural practices of the region's ancient civilizations. Engaging with the local community and savoring traditional cuisine completes the cultural experience, leaving travelers with a profound appreciation for the historical legacy of Mahasthangarh.."
+      },
+      {
+        "tourType": "Tour of Ratargul Swamp Forest ",
+        "date": "2023-12-05",
+        "name": "Safari Nomads",
+        "email": "safari@example.com",
+        "photo": "https://i.postimg.cc/4ySNNqbS/story3.jpg",
+        "rate": 4.7,
+        "story": "A Ratargul Swamp Forest tour is a captivating escape into nature's embrace. As you arrive at this  the journey starts with a picturesque drive through rural landscapes. The heart of the experience lies in the boat tour through the labyrinthine waterways, surrounded by the verdant beauty of mangrove trees. Mirrored reflections on the water surface create a dreamlike atmosphere. Beyond the scenic beauty, the swamp forest is a haven for birdwatching and wildlife exploration, offering glimpses of the diverse ecosystem that thrives in this freshwater swamp. The tour promises tranquility, natural wonders, and an intimate connection with Bangladesh's lush biodiversity."
+      }
+    ]
+  

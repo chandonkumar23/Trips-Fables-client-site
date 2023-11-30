@@ -6,7 +6,7 @@ const TypeData = ({type}) => {
     return (
         <div>
            <div >
-            <Link to={`/tourDetails/${tourType}`}><img  className="h-[200px]  relative rounded-md border-2 border-[#2EC1DB]" src={image}  alt="" /></Link>
+            <Link to={`/tourDetails/${tourType}`}><img  className="h-[200px] relative rounded-md border-2 border-[#2EC1DB]" src={image}  alt="" /></Link>
             <h3 className="absolute "> {tourType}</h3>
            </div>
         </div>

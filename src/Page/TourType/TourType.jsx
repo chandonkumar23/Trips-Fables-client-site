@@ -15,7 +15,7 @@ const TourType = () => {
            <h2 className="text-center font-bold text-xl md:text-3xl lg:text-5xl mb-24">
           Tour <span className="text-[#2EC1DB]">Type</span>
         </h2>
-          <div className='flex items-center  gap-3 pt-10'>
+          <div className='grid md:grid-cols-2 lg:grid-cols-4  gap-3 pt-10'>
           {
             types.map(type =><TypeData key={type._id} type={type}></TypeData>)
           }

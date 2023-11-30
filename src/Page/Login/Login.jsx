@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Authprovider/Authprovider";
-import GoogleLoing from "../GoogleLogin/GoogleLogin";
 import Swal from "sweetalert2";
 
 const Login = () => {
@@ -82,7 +81,7 @@ const Login = () => {
                   </span>
                 </a>
               </label>
-              <GoogleLoing></GoogleLoing>
+         
             </form>
           </div>
         </div>

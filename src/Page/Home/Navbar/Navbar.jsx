@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Authprovider/Authprovider";
 import Swal from "sweetalert2";
 import { BiLogOut } from "react-icons/bi";
@@ -80,22 +80,53 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1 text-lg">
           <li>
-                <Link to={"/"}>Home</Link>
+                <NavLink to={"/"}  className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#2EC1DB] underline "
+                    : ""}>Home
+                    </NavLink>
               </li>
               <li>
-                <Link to={"/community"}>Community</Link>
+                <NavLink to={"/community"}className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#2EC1DB] underline "
+                    : ""}>Community</NavLink>
               </li>
               <li>
-                <Link to={"/blogs"}>Blogs</Link>
+                <NavLink to={"/blogs"}className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#2EC1DB] underline "
+                    : ""}>Blogs</NavLink>
               </li>
               <li>
-                <Link to={"/about"}>About Us</Link>
+                <NavLink to={"/about"}className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#2EC1DB] underline "
+                    : ""}>About Us</NavLink>
               </li>
               <li>
-                <Link to={"/contact"}>Contact Us</Link>
+                <NavLink to={"/contact"}className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#2EC1DB] underline "
+                    : ""}>Contact Us</NavLink>
               </li>
               <li>
-                <Link to={"/login"}>Login</Link>
+                <NavLink to={"/login"}className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#2EC1DB] underline "
+                    : ""}>Login</NavLink>
               </li>
               
              
@@ -125,7 +156,7 @@ const Navbar = () => {
 
               <li className="bg-[#2EC1DB] text-black">
                 {
-                  user ? <Link to={"/dashboard"}>Dashboard</Link>:<></>
+                  user ? <NavLink to={"/dashboard"}>Dashboard</NavLink>:<></>
                 }
               </li>
               <li >
