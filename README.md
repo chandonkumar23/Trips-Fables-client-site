@@ -1,8 +1,23 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Trips Fables
 
-Currently, two official plugins are available:
+This is a tour guide website. everyone esaly find his fevrite place
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Features
+
+ 
+- Through this website the everyone can find his favorite place where he wants to go on tour and book the tour very easily
+
+- A new user can sign up very easily.  and can login.  user can add his/her favorite places to the wish list
+
+- If a normal user clicks on the profile picture in the nav bar, a dashboard will be displayed which will have My Profile, My Booking, My Waste Test.
+
+- This website has admit roll. Admin can add sightseeing places.
+ 
+ ## useing by:
+ - React js
+ - node js
+ - express js
+ - Tailwind css
+ - daisy ui
