@@ -11,6 +11,7 @@ const PackageCart = ({ packag }) => {
   const navigate = useNavigate();
   const {_id, image, price, tripTitle,tourType } = packag ||{};
   const alldata = {image,price,tripTitle,tourType,email}
+
   const handleAdd = () =>{
     fetch('https://asssignment-12-serverrr.vercel.app/whishlist',{
       method:'POST',
@@ -18,7 +19,6 @@ const PackageCart = ({ packag }) => {
         'content-type': 'application/json'
       },
       body: JSON.stringify(alldata),
-
     })
     .then(res =>res.json())
     .then(data =>{

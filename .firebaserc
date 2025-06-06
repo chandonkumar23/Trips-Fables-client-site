@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "assignment-12-17c04"
-  }
+    "default": "trips-fables",
+    "dist": "trips-fables"
+  },
+  "targets": {},
+  "etags": {}
 }

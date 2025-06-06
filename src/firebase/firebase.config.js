@@ -5,13 +5,19 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_apiKey ,
-  authDomain: import.meta.env.VITE_authDomain ,
-  projectId: import.meta.env.VITE_projectId ,
-  storageBucket: import.meta.env.VITE_storageBucket ,
-  messagingSenderId: import.meta.env.VITE_messagingSenderId ,
-  appId: import.meta.env.VITE_appId 
+  apiKey: "AIzaSyCQFakJJMA6t0WQqkOLmG3Fpgy15iOovG4",
+  authDomain: "trips-fables-e6ab6.firebaseapp.com",
+  projectId: "trips-fables-e6ab6",
+  storageBucket: "trips-fables-e6ab6.firebasestorage.app",
+  messagingSenderId: "383539525802",
+  appId: "1:383539525802:web:3d47063fa8616b6499b8d3"
 };
-
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
+
+
+
+
+
+
+

@@ -63,7 +63,7 @@ import ErrorPage from "../Page/ErrorPage";
         },
         
         {
-         path:'/detailes/:_id',
+         path:'/detailes/:id',
          element:<PackageDetailes></PackageDetailes>,
          loader: ()=> fetch('https://asssignment-12-serverrr.vercel.app/all')
          
@@ -96,7 +96,7 @@ import ErrorPage from "../Page/ErrorPage";
         element:<PrivetRoutes><Dashboard></Dashboard></PrivetRoutes>,
         children:[
           {
-              path:'dashboard/myprofile',
+              path:'/dashboard',
               element:<MyProfile></MyProfile>
             },
             {

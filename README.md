@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # Trips Fables
 Link link : https://assignment-12-17c04.web.app/
 
@@ -22,3 +23,5 @@ This is a tour guide website. everyone esaly find his fevrite place
  - express js
  - Tailwind css
  - daisy ui
+=======
+>>>>>>> bac005f (fix some bugs)
