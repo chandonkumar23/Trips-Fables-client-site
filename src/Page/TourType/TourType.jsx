@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import TypeData from './typeData';
+import TypeData from './TypeData';
 const TourType = () => {
   const [types , setTypes] = useState([])
   useEffect(() =>{
