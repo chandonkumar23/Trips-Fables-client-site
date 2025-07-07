@@ -1,7 +1,7 @@
 {
   "projects": {
     "default": "trips-fables-b1703",
-    "dist": "trips-fables",
+    "dist": "tript-fables-1",
     "default ": "trips-fables-5b7c8"
   },
   "targets": {},
